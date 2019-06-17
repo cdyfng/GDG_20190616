@@ -35,7 +35,7 @@ learning_rate = 0.01
 #定义模型
 model = Sequential()
 #设置模型的输入数据
-model.add(Reshape(target_shape=(n_width,n_height,n_depth), input_shape=(n_inputs,)))
+model.add(Reshape(target_shape=(n_width,n_he ight,n_depth), input_shape=(n_inputs,)))
 
 #添加卷积层  4*4卷积核     生成32个特征图
 model.add(Conv2D(filters=n_filters[0], kernel_size=4, padding='SAME', activation='relu' ) )
